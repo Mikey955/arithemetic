@@ -9,8 +9,8 @@ def first():
                 b_val=b_val.join(a_val)                                     #converting tuple value to string value
                 b_val=b_val.split(',')                                      #spliting values
                 print '%d addition:' %pos
-                a=int(b_val[0])                                             #checking for invalid value
-                b=int(b_val[1])
+                a=float(b_val[0])                                           #checking for invalid value
+                b=float(b_val[1])
                 print (a+b)
                 return 0
             except ValueError:
@@ -40,3 +40,4 @@ def first():
             print 'Invalid value!'
             parsed = True
     
+first()
