@@ -8,7 +8,7 @@ def second():
                 b_val=""                                                    #declaring string type
                 b_val=b_val.join(a_val)                                     #converting tuple value to string value
                 b_val=b_val.split(',')                                      #spliting values
-                print '%d subtraction:' %pos
+                print '%d Subtraction:' %pos
                 a=float(b_val[0])                                           #checking for invalid value
                 b=float(b_val[1])
                 print (a-b)
