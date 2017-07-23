@@ -1,4 +1,4 @@
-#subtraction function 
+#multiplication function 
 def third():
     def con_mul(a_val,pos):                                                 #This is the multiplication function
     
@@ -23,7 +23,7 @@ def third():
     parsed = False                                              
     while not parsed:
         try:
-            print "Enter the values to be multiplied (eg: '2,3' => 2+3):"   #entering values
+            print "Enter the values to be multiplied (eg: '2,3' => 2*3):"   #entering values
             val=0
             while val < entitiy:
                 a=input()
