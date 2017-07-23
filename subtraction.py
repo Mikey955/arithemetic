@@ -17,12 +17,12 @@ def second():
                 print 'Invalid value!'
                 parsed = True
 
-    int_list=[]
-    entitiy=input('Number of Values:')                                      #number of values
-
     parsed = False                                              
     while not parsed:
         try:
+            int_list=[]
+            entitiy=input('Number of Values:')                              #number of values
+            entitiy=int(entitiy)
             print "Enter the values to be subtracted (eg: '2,3' => 2-3):"   #entering values
             val=0
             while val < entitiy:
