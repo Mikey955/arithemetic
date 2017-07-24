@@ -40,6 +40,6 @@ def sixth():
 
             con_fact(int_list)
             return 0
-        except SyntaxError,NameError:
+        except SyntaxError,KeyboardInterrupt:
             print 'Invalid value!'
             parsed = True

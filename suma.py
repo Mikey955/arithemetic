@@ -44,6 +44,6 @@ def eighth():
                 con_add(int_list[val],val+1)
                 val=val+1
             return 0
-        except SyntaxError:
+        except SyntaxError,KeyboardInterrupt:
             print 'Invalid value!'
             parsed = True

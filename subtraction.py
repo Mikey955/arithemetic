@@ -36,6 +36,6 @@ def second():
                 val=val+1
 
             return 0
-        except SyntaxError:
+        except SyntaxError,KeyboardInterrupt:
             print 'Invalid value!'
             parsed = True

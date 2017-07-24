@@ -49,8 +49,6 @@ def seventh():
 
             con_fib(int_list)
             return 0
-        except SyntaxError,NameError:
+        except SyntaxError,KeyboardInterrupt:
             print 'Invalid value!'
             parsed = True
-
-seventh()
