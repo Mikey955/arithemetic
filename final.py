@@ -11,12 +11,14 @@ from maxi import tenth
 from avg import eleventh
 from per import tweleth
 import sys
+import os
 
 ret_val='y'
 parsed = False                                                      #to catch invalid value
 while not parsed:
     try:
         if ret_val in ('y','Y'):
+            os.system('clear')
             print "        Arithemetic Function       "
             print "1. Addition"
             print "2. Subtraction"

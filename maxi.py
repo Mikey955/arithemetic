@@ -1,4 +1,5 @@
-#maximization function   
+#maximization function  
+import os 
 def tenth():
     def con_max(a_val,pos):                                                 #This is the maxima function
         b_val=""                                                            #declaring string type
@@ -60,6 +61,7 @@ def tenth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

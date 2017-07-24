@@ -1,4 +1,5 @@
 #power function 
+import os
 def fifth():
     def con_pow(a_val,pos):                                                 #This is the power function
     
@@ -20,6 +21,7 @@ def fifth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

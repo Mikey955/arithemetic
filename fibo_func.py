@@ -1,4 +1,5 @@
 #fibonacci function 
+import os
 def seventh():
     def con_fib(a_val):                                                                 #This is the fibonacci function
         b_val=""                                                                        #declaring string type
@@ -43,6 +44,7 @@ def seventh():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             print "Enter the values to be added (eg: '2,3,..' => series till position):"#entering values
             int_list=input()

@@ -1,4 +1,5 @@
-#division function 
+#division function
+import os 
 def fourth():
     def con_div(a_val,pos):                                                 #This is the division function
     
@@ -22,6 +23,7 @@ def fourth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

@@ -1,4 +1,5 @@
 #minimum function   
+import os
 def ninth():
     def con_min(a_val,pos):                                                 #This is the minima function
         b_val=""                                                            #declaring string type
@@ -60,6 +61,7 @@ def ninth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

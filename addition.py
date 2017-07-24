@@ -1,4 +1,5 @@
 #addition function 
+import os
 def first():
     def con_add(a_val,pos):                                                 #This is the addition function
     
@@ -20,6 +21,7 @@ def first():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

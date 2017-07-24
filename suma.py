@@ -1,6 +1,7 @@
 #summation function   
+import os
 def eighth():
-    def con_sum(a_val,pos):                                                 #This is the summation function
+    def con_suma(a_val,pos):                                                 #This is the summation function
         b_val=""                                                            #declaring string type
         b_val=b_val.join(a_val)                                             #converting tuple value to string value
         b_val=b_val.split(',')                                              #spliting values
@@ -29,6 +30,7 @@ def eighth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)
@@ -41,7 +43,7 @@ def eighth():
 
             val=0
             while val < entitiy:
-                con_add(int_list[val],val+1)
+                con_suma(int_list[val],val+1)
                 val=val+1
             return 0
         except SyntaxError,KeyboardInterrupt:

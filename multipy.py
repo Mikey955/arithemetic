@@ -1,4 +1,5 @@
 #multiplication function 
+import os
 def third():
     def con_mul(a_val,pos):                                                 #This is the multiplication function
     
@@ -20,6 +21,7 @@ def third():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

@@ -1,4 +1,5 @@
 #subtraction function 
+import os
 def second():
     def con_sub(a_val,pos):                                                 #This is the subtraction function
     
@@ -20,6 +21,7 @@ def second():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                              #number of values
             entitiy=int(entitiy)

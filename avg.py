@@ -1,4 +1,5 @@
-#average function   
+#average function  
+import os
 def eleventh():
     def con_avg(a_val,pos):                                                  #This is the avg function
         b_val=""                                                             #declaring string type
@@ -29,6 +30,7 @@ def eleventh():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                               #number of values
             entitiy=int(entitiy)

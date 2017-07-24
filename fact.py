@@ -1,4 +1,5 @@
 #factorial function 
+import os
 def sixth():
     def con_fact(a_val):                                                    #This is the factorial function
         b_val=""                                                            #declaring string type
@@ -34,6 +35,7 @@ def sixth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             print "Enter the values to be added (eg: '2,3,..' => 2!,3!,..):"#entering values
             int_list=input()

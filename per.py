@@ -1,4 +1,5 @@
 #average function   
+import os
 def tweleth():
     def con_per(a_val,pos):                                                  #This is the avg function
         b_val=""                                                             #declaring string type
@@ -36,6 +37,7 @@ def tweleth():
     parsed = False                                              
     while not parsed:
         try:
+            os.system('clear')
             int_list=[]
             entitiy=input('Number of Values:')                               #number of values
             entitiy=int(entitiy)
