@@ -35,7 +35,7 @@ while not parsed:
             print 'Enter your choice:',
             choice=input()
 
-            if choice == 1:
+            if choice == 1:                                         #finction calls
                 first()
             elif choice == 2:
                 second()
@@ -70,7 +70,7 @@ while not parsed:
             print 'Invalid Option'
             print 'Do you wish to continue [y/n]:'
             ret_val=raw_input() 
-    except KeyboardInterrupt:
+    except KeyboardInterrupt:                                       #error catcher
         print " " 
         print 'Do you wish to continue [y/n]:'
         ret_val=raw_input()                
