@@ -1,10 +1,10 @@
-"""This is an exponential function where we receive an input variable(list) to this function. The values 
+"""This is an factorial function where we receive an input variable(list) to this function. The values 
    will be parsed around and check if the values a verified or not. Then the result will be displayed"""
 
 #we imported os so that whenever the user access this function its on a clear page 
 import os
-#this is the exponential function according to the menu
-def power_function(parse_value):
+#this is the factorial function according to the menu
+def factorial_function(parse_value):
     parsed = False                                                      
     while not parsed:
         try:
@@ -23,26 +23,19 @@ def power_function(parse_value):
             parse_len=len(parse_str)
 
             #if a number is parsed this variable is used to collect that value
-            num_value=None
+            num_value=1
             
-            #if user inputs more than two values display message and return
-            if parse_len > 2:
+            #if user inputs more than one values display message and return
+            if parse_len > 1:
                 print 'OOPS. Too many values.'
                 return 0
             else:
-                i=0
+                i=1
                 #to parse thru the string
-                while i < parse_len:
-                    #we read the value to check if valid
-                    temp_val=int(parse_str[i]) 
-                    if num_value is None:
-                        #we check in the if condition if there was any value or not so we could initialized the first value
-                        num_value=temp_val
-                    else:
-                        #updating the exponential value
-                        num_value=num_value**temp_val                                
+                while i <= int(parse_str[0]):
+                    num_value=num_value*i                               
                     i=i+1
-                print 'The exponential value is: %d' %num_value 
+                print 'The factorial value is: %d' %num_value 
                 return 0
         #here is where we catch an string value or a keyboard interrupt
         except ValueError,KeyboardInterrupt:

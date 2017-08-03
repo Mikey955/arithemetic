@@ -1,10 +1,10 @@
-"""This is an subtraction function where we receive an input variable(list) to this function. The values 
+"""This is an minimal function where we receive an input variable(list) to this function. The values 
    will be parsed around and check if the values a verified or not. Then the result will be displayed"""
 
 #we imported os so that whenever the user access this function its on a clear page 
 import os
-#this is the subtraction function according to the menu
-def sub_function(parse_value):
+#this is the minimum function according to the menu
+def minimum_function(parse_value):
     parsed = False                                                      
     while not parsed:
         try:
@@ -23,20 +23,22 @@ def sub_function(parse_value):
             parse_len=len(parse_str)
             
             #we used a float variable in case of precautions that the user might use a decimal value 
-            sub_value=float(parse_str[0])
+            minimum_value=float(parse_str[0])
             i=1
             #to parse thru the string
             while i < parse_len:
                 #we check the value at each position if there is any error
                 convert_value=float(parse_str[i])
-                #if there isn't the value keeps adding up
-                sub_value=sub_value-convert_value
+                #we check if its the lowest value
+                if minimum_value > convert_value:
+                    #if it is we assign it to the variable
+                    minimum_value=convert_value
                 i=i+1
 
-            #we then print the final addition
-            print 'The subtraction is :%d' %sub_value
+            #we then print the final minimum value
+            print 'The minimum value is :%d' %minimum_value
             return 0
         #here is where we catch an invalid value or a keyboard interrupt
         except ValueError,KeyboardInterrupt:
-            print 'Invalid value! Subtraction was not possible.'
+            print 'Invalid value! Minimal was not possible.'
             parsed = True

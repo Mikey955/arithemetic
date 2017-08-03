@@ -1,19 +1,21 @@
-from addition import first
-from subtraction import second
-from multipy import third
-from division import fourth
-from power import fifth
-from fact import sixth
-from fibo_func import seventh
-from suma import eighth
-from mini import ninth
-from maxi import tenth
-from avg import eleventh
-from per import tweleth
+from addition import add_function
+from subtraction import sub_function
+'''from multipy import mutiply_function
+from division import division_function
+from power import power_function
+from factorial import factorial_function
+from summation import summation_function
+from minimal import minimum_function
+from maximal import maximum_function
+from average import average_function
+from percentage import percent_function
+from fibonacci import fibonacci_function'''
+from input_val import user_getval
 import sys
 import os
 
 ret_val='y'
+user_list=None
 parsed = False                                                      #to catch invalid value
 while not parsed:
     try:
@@ -34,31 +36,56 @@ while not parsed:
             print "12. Percentage"
             print 'Enter your choice:',
             choice=input()
+            
 
-            if choice == 1:                                         #finction calls
-                first()
+            if choice == 1: 
+                print 'Enter your vaules (eg: only two decimal values):'
+                user_list=user_getval()                                        
+                add_function(user_list)
             elif choice == 2:
-                second()
+                print 'Enter your values (eg: 1,2,3)'
+                user_list=list(user_getval())
+                sub_function(user_list)
             elif choice == 3:
-                third()
+                print 'Enter your values (eg: 1,2,a,b,...)'
+                user_list=list(user_getval())
+                mutiply_function(user_list)
             elif choice == 4:
-                fourth()
+                print 'Enter your values (eg: only two decimal values)'
+                user_list=list(user_getval())
+                division_function(user_list)
             elif choice == 5:
-                fifth()
+                print 'Enter your values (eg: only two integer values)'
+                user_list=list(user_getval())
+                power_function(user_list)
             elif choice == 6:
-                sixth()
+                print 'Enter your values (eg: only one integer value)'
+                user_list=list(user_getval())
+                factorial_function(user_list)
             elif choice == 7:
-                seventh()
-            elif choice == 8:
-                eighth()
+                print 'Enter your values (eg: only one sequence)'
+                user_list=list(user_getval())
+                fibonacci_function(user_list)
+            #elif choice == 8:
+             #   print 'Enter your values (eg: 1,2,3,...)'
+              #  user_list=list(user_getval())
+               # summation_function(user_list)
             elif choice == 9:
-                ninth()
+                print 'Enter your values (eg: 1,2,3,...)'
+                user_list=list(user_getval())
+                minimum_function(user_list)
             elif choice == 10:
-                tenth()
+                print 'Enter your values (eg: 1,2,3,...)'
+                user_list=list(user_getval())
+                maximum_function(user_list)
             elif choice == 11:
-                eleventh()
+                print 'Enter your values (eg: 1,2,3,...)'
+                user_list=list(user_getval())
+                average_function(user_list)
             elif choice == 12:
-                tweleth()
+                print 'Enter your values (eg: enter only 5 values less than or equal too 100)'
+                user_list=list(user_getval())
+                average_function(user_list)
         
             print " " 
             print 'Do you wish to continue [y/n]:'
